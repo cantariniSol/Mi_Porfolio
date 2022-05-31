@@ -1,0 +1,66 @@
+body {
+     background-color: rgb(221, 221, 191);
+     color: rgb(0, 0, 0)
+}
+
+a:hover {
+     background: rgb(230, 235, 105);
+     letter-spacing: 2px;
+     border-radius: 5px;
+     border: 1px solid rgb(0, 0, 0);
+     font-weight: bold;
+     transition: background-color .6s;
+}
+/* -------------------- Estilos de HOME - PORFOLIO  -------------------- */
+#img-porfolio {
+    border: 15px solid rgb(230, 235, 105);
+    border-radius: 50%;
+}
+
+#header-porfolio{
+     background: rgba(170, 115, 51, 0.438);
+     border-radius: 20px;
+     padding: 20px;
+}
+.card-proyecto{
+     background: rgb(22, 153, 92);
+     border-radius: 3%;
+     color: rgb(0, 0, 0);
+}
+.card-proyecto:hover{
+     border: 2px solid rgb(0, 0, 0);
+     background: rgb(230, 235, 105); 
+     transition: background-color .6s;
+}
+/* -------------------- Estilos de BLOG  -------------------- */
+
+.card-blog{
+     background: rgba(170, 115, 51, 0.438);
+          border-radius: 10px;
+          color: rgb(0, 0, 0);
+}
+
+.card-blog img{
+     border-radius: 50%;
+     border: 10px solid rgb(230, 235, 105);
+}
+
+.card-blog:hover {
+     border: 2px solid rgb(0, 0, 0);
+     background: rgb(230, 235, 105);
+     transition: background-color .6s;
+}
+
+
+.izquierda {
+     float: left;
+     margin: 5px;
+     border: 10px solid rgb(230, 235, 105);
+     border-radius: 5%;
+}
+
+.post-detail{
+     background: rgba(170, 115, 51, 0.438);
+     border-radius: 10px;
+     color: rgb(0, 0, 0);
+}

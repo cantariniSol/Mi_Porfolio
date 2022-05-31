@@ -1,0 +1,17 @@
+{% extends 'componentes/body.html' %}
+
+{% block titulo %} Post {{post.id}} {% endblock %}
+
+{% block contenido %}
+<div class="text-center">
+    <h2 class="display-6" style="display:inline-block"> 🧐{{post.titulo}} </h2>
+    <h3 class="h5 lead text-muted text-end ms-3" style="display:inline-block">{{post.fecha | date:'M d Y'}} 📅</h3>
+    <br>
+    <div class="post-detail">
+        <img class="izquierda" src="{{post.imagen.url}}" alt="Imagen sobre {{p.titulo}}">
+        <p class="text-start mt-3">{{post.descripcion | safe }}</p>
+    </div>
+            
+</div>
+
+{% endblock %}

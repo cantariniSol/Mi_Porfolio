@@ -1,0 +1,12 @@
+{% load static %}
+
+<!--Seccion NAVBAR-->
+<nav class="navbar navbar-expand p-2 mb-3" style="background-color:rgb(22, 153, 92)">
+    <div class="nav navbar-nav ms-auto">
+        <a class="nav-item nav-link p-3" href="{% url 'home' %}" style="color:rgb(0, 0, 0); margin:0px 4px">HOME</a>
+        <a class="nav-item nav-link p-3" href="{% url 'home' %}" style="color:rgb(0, 0, 0); margin:0px 4px">PROYECTOS</a>
+        <a class="nav-item nav-link p-3" href="{'% url 'home'  %'}" style="color:rgb(0, 0, 0); margin:0px 4px">CONTACTOS</a>
+        <a class="nav-item nav-link p-3" href="{% url 'blog:posts' %}" style="color:rgb(0, 0, 0); margin:0px 4px">BLOG</a>
+        <a class="btn btn-dark btn-sm p-3" href="{% static 'porfolio/cv_msol.pdf' %}" target="_blank" style="color:rgb(253, 225, 66); margin:0px 4px; font-size: 15px;">Descarcar CV</a>
+    </div>
+</nav>
