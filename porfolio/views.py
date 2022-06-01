@@ -11,3 +11,7 @@ def inicio(request):
 def home(request):
     proyectos = Proyecto.objects.all()
     return render(request, 'home.html', {'proyectos': proyectos})
+
+#Vista CONTACTO
+def contacto(request):
+    return render(request, 'contacto.html')
