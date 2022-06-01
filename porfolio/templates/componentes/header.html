@@ -1,0 +1,62 @@
+{% load static %}
+
+<!--Seccion HEADER-->
+<header id="header-porfolio" class="row">
+    <div class="col-md-4">
+        <img id="img-porfolio" src="{% static 'porfolio/porfolio.jpeg'%}" width="100%" height="100%" alt="MySelf">
+    </div>
+    <div class="col-md-8 my-auto">
+        <section>
+            <h1 class="display-6 pe-4" style="display:inline-block">Soy <strong>Sol Cantarini</strong></h1>
+            <!-- Seccion REDES SOCIALES -->
+            <div style="display:inline-block">
+                <!-- Linkedin -->
+                <a class="btn  btn-floating mb-3" href="https://www.linkedin.com/in/cantarini-maria-sol/" role="button"
+                    style="border-radius:50%" target="_blank">
+                    <i class="fab fa-linkedin-in" style="color:rgb(0, 0, 0)"></i>
+                </a>
+            
+                <!-- Github -->
+                <a class="btn btn-floating mb-3" href="https://github.com/cantariniSol" role="button" style="border-radius:50%"
+                    target="_blank">
+                    <i class="fab fa-github" style="color: rgb(0, 0, 0)"></i>
+                </a>
+            
+                <!-- Gmail -->
+                <a class="btn btn-floating mb-3" href="#cantarinisol@gmail.com" role="button" style="border-radius:50%"
+                    target="_blank">
+                    <i class="fab fa-google" style="color:rgb(0, 0, 0)"></i>
+                </a>
+            </div>
+
+        </section>
+        <h3>Técnica en Desarollo de Software 👩‍💻</h3>
+        <p class="lead">Mi potencial radica en mi diversidad de conocimientos en distintos lenguajes y técnicas de
+            programación.
+            Siempre me encuentro en constante aprendizaje, especialización y creación de nuevos proyectos</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><span class="badge bg-warning text-dark" data-bs-toggle="collapse"
+                    data-bs-target="#python">PYTHON</span></li>
+            <li class="list-inline-item"><span class="badge bg-info text-dark" data-bs-toggle="collapse"
+                    data-bs-target="#c_sharp">C#</span></li>
+            <li class="list-inline-item"><span class="badge bg-danger text-dark" data-bs-toggle="collapse"
+                    data-bs-target="#java">JAVA</span></li>
+            <li class="list-inline-item"><span class="badge bg-primary text-dark" data-bs-toggle="collapse"
+                    data-bs-target="#sql">SQL</span></li>
+        </ul>
+        <a class="btn btn-dark btn-sm p-3" href="{% static 'porfolio/cv_msol.pdf' %}" target="_blank"
+            style="color:rgb(253, 225, 66)">Descarcar CV</a>
+
+        <!-- <div id="python" class="collapse show">
+                Prooooooximamente🐍🐍🐍
+            </div>
+            <div id="c_sharp" class="collapse show">
+                Prooooooximamente ###
+            </div>
+            <div id="java" class="collapse show">
+                Prooooooximamente☕☕☕
+            </div>
+            <div id="sql" class="collapse show">
+                Prooooooximamente 🐬🐬
+            </div> -->
+</header>

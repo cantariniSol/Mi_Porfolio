@@ -1,0 +1,23 @@
+{% extends 'componentes/body.html' %}
+
+<!-- Sección INICIO-->
+{% block titulo %} Inicio {% endblock%}
+
+{% block contenido %}
+    <div class="p-5" style="border-radius:20px; background-color: rgba(170, 115, 51, 0.438);">
+            <h1 class="display-3">👋😄¡¡Hola te damos la bienvenida!! </h1>
+            <br>
+            <p class="lead" style="font-size:25px">Esta es una aplicación contruida con:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><span class="badge bg-warning text-dark">Python 3.10.1</span></li>
+                <li class="list-inline-item"><span class="badge bg-info text-dark">Django 4.0.4 </span></li>
+                <li class="list-inline-item"><span class="badge bg-danger text-dark">Sqlite3</span></li>
+            </ul>
+            <hr class="my-2">
+            <p style="font-weight: bold; font-size:17px">😉👇 Te invitamos a que nos conozcas y veas nuestro blog!
+            </p>
+            <p class="lead">
+                <a class="btn btn-outline-dark btn-lg" style="background: rgb(230, 235, 105); color: rgb(0, 0, 0);" href="{% url 'home'%}" role="button">INGRESAR</a>
+            </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'componentes/body.html' %}
+
+{% load static %}
+
+{% block titulo %} Home {% endblock%}
+
+{% block contenido %}
+<!--Sección HEADER HOME-->
+    {% include 'componentes/header.html'%}
+    
+<!--Sección PORFOLIO-->
+    <div id='proyectos' class="row my-4 text-center">
+        <h3 class="display-6 "> Proyectos realizados </h3>
+        <hr>
+        {% for p in proyectos %}
+        <div class="col-md-4 p-4">
+            <div class="card card-proyecto">
+                <img class="card-img-top rounded-3" src="{{p.imagen.url}}" alt="Imagen sobre {{p.titulo}}">
+                <div class="card-body">
+                    <h4 class="card-title">{{p.titulo}}</h4>
+                    <p class="card-text lead ">{{p.descripcion}}</p>
+                    {% if p.url %}
+                        <a href="{{p.url}}" class="btn btn-black bg-dark rounded-3 btn-sm  text-light" target="_black"> Repositorio GitHub</a>
+                    {% endif%}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}
+
+

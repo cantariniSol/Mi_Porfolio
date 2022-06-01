@@ -1,0 +1,21 @@
+{% extends 'componentes/body.html' %}
+
+{% block titulo %} Blog {% endblock %}
+
+{% block contenido %}
+    {% for p in posts %}
+    <div class="card card-body mb-3 card-blog">
+        <div class="row">
+            <div class="col-3">
+                <img class="card-img-fluid" src="{{p.imagen.url}}" width="200px" height="200px" alt="Imagen sobre {{p.titulo}}">
+            </div>
+            <div class="col-9">
+                <h4 class="text-end text-muted lead">{{p.fecha | date:'M d Y'}} 📅</>
+                <h4 class="card-title">{{p.titulo | upper }}</h4>
+                <p class="card-text lead">{{p.descripcion | striptags | truncatechars:100 }}</p>
+                <a class="btn btn-black bg-dark rounded-3 text-light" href="{% url 'blog:post_detail' p.id %}"> 🧐 Leer más!</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

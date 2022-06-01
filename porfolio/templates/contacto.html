@@ -1,0 +1,32 @@
+{% extends 'componentes/body.html'%}
+
+<!--Sección CONTACTO - FORMULARIO-->
+{% block titulo %} Contacto {% endblock %}
+
+{% block contenido %}
+<h2>Cotacto</h2>
+<div.<div class="container">
+    <p>Si te gustaría ponerte contacto conmigo me podés mandar un mensaje y con gusto re responderé en la brevedad!!
+    </p>
+    <form action="/contactar/" method="POST">
+        {% csrf_token %}
+        <div class="mb-3 mt-3">
+            <label for="nombre" class="form-label" name="nombre">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" placeholder="Asunto" name="apellido">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email" name="Email">
+        </div>
+        <div class="mb-3">
+            <label for="comment">Mensaje</label>
+            <textarea class="form-control" rows="5" name="mensaje" style="resize:none;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Enviar</button>
+    </form>
+{% endblock %}
+
